@@ -23,15 +23,10 @@
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
-
-<!-- 	<script src="https://kit.fontawesome.com/21e22e81fd.js"></script>
- -->	
-
- <script src="https://kit.fontawesome.com/1596c4b58a.js"></script>
- 
-<!--  <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
-
-	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/css/all.min.css"></script> -->
+	
+	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/css/all.min.css"></script>
+	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/js/all.min.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js"></script> -->
 
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>

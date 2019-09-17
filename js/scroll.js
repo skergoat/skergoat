@@ -212,10 +212,11 @@ $(function() {
 			$('body').attr('id', '1'); 
 		}
 
-		// button slide mobile 
+		// button slide mobile
 
 		$('#go-left').attr('data-url', '#section-1').css({'transition':'0.2s', 'left':'-100px'});
 		$('#go-right').attr('data-url', '#section-2').css({'transition':'0.2s', 'right':'-100px'});
+
 
 	}
 
@@ -256,8 +257,15 @@ $(function() {
 
 		// button slide mobile 
 
-		$('#go-left').attr('data-url', '#section-1').css({'transition':'0.2s', 'left':'0px'});
-		$('#go-right').attr('data-url', '#section-2').css({'transition':'0.2s', 'right':'0px'});
+		if(!$('.hamburger').hasClass('responsive')) {
+
+			$('#go-left').css({'transition':'0.2s', 'left':'0px'});
+			$('#go-right').css({'transition':'0.2s', 'right':'0px'});
+
+		}
+
+		$('#go-left').attr('data-url', '#section-1');
+		$('#go-right').attr('data-url', '#section-2');
 		
 	}
 
@@ -515,6 +523,7 @@ $(function() {
 
 			$('#go-left').attr('data-url', '#section-1').css({'transition':'0.2s', 'left':'-100px'});
 			$('#go-right').attr('data-url', '#section-2').css({'transition':'0.2s', 'right':'-100px'});
+		
 
 		}
 
@@ -553,10 +562,16 @@ $(function() {
 				$('body').attr('id', '2'); 
 			}
 
-			// button slide mobile 
+			// button slide mobile
 
-			$('#go-left').attr('data-url', '#section-1').css({'transition':'0.2s', 'left':'0px'});
-			$('#go-right').attr('data-url', '#section-3').css({'transition':'0.2s', 'right':'0px'});
+			$('#go-left').attr('data-url', '#section-1');
+			$('#go-right').attr('data-url', '#section-3');
+
+			if(!$('.hamburger').hasClass('responsive')) { 
+
+				$('#go-left').css({'transition':'0.2s', 'left':'0px'});
+				$('#go-right').css({'transition':'0.2s', 'right':'0px'});
+			}
 			
 		}
 
