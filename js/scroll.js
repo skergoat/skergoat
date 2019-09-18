@@ -528,8 +528,10 @@ $(function() {
 
 			$('#go-left').attr('data-url', '#section-1');
 			$('#go-right').attr('data-url', '#section-2');
-		
 
+			// $('#main').css({'background':'url("https://www.skergoat.com/wp-content/uploads/2019/08/Endless-Constellation.gif")', 'background-repeat':'repeat'});
+			$('#main').css({'transition':'0.3s', 'background':'transparent'});
+			// $('#main').css({'transition':'0.3s', 'background':'#3F0E63'});
 		}
 
 		if(scrollLeft >= width * (25 / 100) && scrollLeft <= (width * 2 * 80 / 100)) {
@@ -577,6 +579,10 @@ $(function() {
 			// 	$('#go-left').css({'transition':'0.2s', 'left':'0px'});
 			// 	$('#go-right').css({'transition':'0.2s', 'right':'0px'});
 			// }
+
+			// $('#background-0').css({'transition':'0.2s ease-in-out', 'background':'transparent'});
+			$('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
+
 			
 		}
 
@@ -619,6 +625,8 @@ $(function() {
 
 			$('#go-left').attr('data-url', '#section-2');
 			$('#go-right').attr('data-url', '#section-4');
+
+			$('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
 
 		}
 
@@ -673,6 +681,8 @@ $(function() {
 			$('#go-left').attr('data-url', '#section-3');
 			$('#go-right').attr('data-url', '#section-5');
 
+			$('#main').css({'transition':'0.3s', 'background':'#FADC6F'});
+
 
 		}
 
@@ -713,6 +723,8 @@ $(function() {
 
 			$('#go-left').attr('data-url', '#section-4');
 			$('#go-right').attr('data-url', '#section-6');
+
+			$('#main').css({'transition':'0.3s', 'background':'#459CE7'});
 	
 		}
 
@@ -752,6 +764,8 @@ $(function() {
 			// button slide mobile 
 			$('#go-left').attr('data-url', '#section-5');
 			$('#go-right').attr('data-url', '#section-6');
+
+			$('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
 
 		}
 
