@@ -24,20 +24,30 @@
 		document.documentElement.className = 'js';
 	</script>
 	
-	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/css/all.min.css"></script>
+	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/css/all.min.css"></script> -->
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/js/all.min.js"></script>
-	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js"></script> -->
 
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
 
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/beforeLoad.js"></script>
-	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/disableScroll.js"></script>
+	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/disableScroll.js"></script> -->
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/contactForm.js"></script>
 
-	<script type="text/javascript">
-        var timerStart = Date.now();
-    </script>
+	<script>
+
+		var width = $(window).width();
+
+		if(width < 500) {
+
+			// disable scroll on IOS 
+			document.ontouchmove = function(e){ e.preventDefault(); }
+			// disable scroll on android 
+			$('body').css('touch-action', 'none');
+
+		}
+
+	</script>
 
 	<?php wp_head(); ?>
 	

@@ -57,6 +57,16 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</div> <!-- #page-container -->
 
+
+	<script>
+
+		// disable scroll on IOS 
+		document.ontouchmove = function(e){ e.preventDefault(); }
+		// disable scroll on android 
+		$('body').css('touch-action', 'none');
+
+	</script>
+
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/loader.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/scroll.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/parallax.js"></script>
@@ -67,6 +77,15 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/contact.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/form.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/ancre.js"></script>
+
+	<!-- <script>
+		
+		if($('body').attr('id') != '1') {
+
+			alert($('body').attr('id'));
+		}
+
+	</script> -->
 
 	<?php wp_footer(); ?>
 

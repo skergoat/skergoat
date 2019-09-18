@@ -35,8 +35,12 @@ $(window).bind("load", function() {
 
 			// if(width < 800) {
 
-				$('body').css('overflow', 'scroll');
+				// $('body').css('overflow', 'scroll');
 			// }
+
+			document.ontouchmove = function(e){ return true; }
+			$('body').css('touch-action', 'auto');
+
 		}
 
 		up() {
@@ -54,7 +58,18 @@ $(window).bind("load", function() {
 
 			// disable scroll
 			$('body').removeClass('offWheel');
-			$('body').css('overflow', 'hidden');
+			// $('body').css('overflow', 'hidden');
+			
+			var width = $(window).width();
+
+			if(width <= 500) {
+
+				// disable scroll on IOS 
+				document.ontouchmove = function(e){ e.preventDefault(); }
+				// disable scroll on android 
+				$('body').css('touch-action', 'none');
+
+			}
 			
 		}
 
@@ -134,6 +149,7 @@ $(window).bind("load", function() {
 		$('.skill-container').animate({'opacity':'0'}, 200);
 		$('.scroll-container').animate({'opacity':'0'}, 200);
 		$('.allons-y-container').animate({'opacity':'0'}, 200);
+		// slide buttons
 		$('#go-left').animate({'left':'-100px'}, 200);
 		$('#go-right').animate({'right':'-100px'}, 200);
 
@@ -280,6 +296,7 @@ $(window).bind("load", function() {
 
 			button.down();
 
+			// slide buttons
 			$('#go-left').css({'display':'none'}, 200);
 			$('#go-right').css({'display':'none'}, 200);
 
@@ -343,18 +360,19 @@ $(window).bind("load", function() {
 			$('.scroll-container').animate({'opacity':'1'}, 200);
 			$('.allons-y-container').animate({'opacity':'1'}, 200);
 			
-			if(upId == 'sublink_1') {
+			// if(upId == 'sublink_1') {
 
-				$('#go-left').css('display', 'block').css({'left':'-100px'});
-				$('#go-right').css('display', 'block').css({'right':'-100px'});
+			// 	// slide buttons
+			// 	$('#go-left').css('display', 'block').css({'left':'-100px'});
+			// 	$('#go-right').css('display', 'block').css({'right':'-100px'});
 
-			}
-			else {
+			// }
+			// else {
 
 				$('#go-left').css('display', 'block').css({'left':'0px'});
 				$('#go-right').css('display', 'block').css({'right':'0px'});
 				
-			}
+			// }
 
 			$('.slide-mobile').show(200);
 

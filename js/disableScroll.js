@@ -8,31 +8,31 @@ $(window).bind("load", function() {
 		var width = $(window).width(); 
 
 		// enable scroll y when #main-2
-		if($('body').hasClass('offWheel')) {
+		// if($('body').hasClass('offWheel')) {
 
-			$('body').css('overflow', 'scroll');
+		// 	$('body').css('overflow', 'scroll');
 
-		} 
+		// } 
 		// enable mousewheel when #main-1
-		else {
+		// else {
 
-			// scroll only if no resize 
-			if(!$('body').hasClass('resize')) {
+		// 	// scroll only if no resize 
+		// 	if(!$('body').hasClass('resize')) {
 
-				// scroll only on laptop or tablette 
-				if(width < 500) {
+		// 		// scroll only on laptop or tablette 
+		// 		if(width < 500) {
 
-					$('body').css('overflow', 'hidden');
+		// 			$('body').css('overflow', 'hidden');
 
-				}
-				else {
+		// 		}
+		// 		else {
 
-					this.scrollLeft -= (delta * 1.5);
-				}
+		// 			this.scrollLeft -= (delta * 1.5);
+		// 		}
 
-			}
+		// 	}
 
-		}
+		// }
 	});
 
 });
