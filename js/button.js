@@ -169,21 +169,21 @@ $(window).bind("load", function() {
 				var paragraph_title = "Wordpress";
 				var paragraph_title_2 = "\« From Scratch \»";
 
-				var section_2_p1 = "Wordpress est un site clé en main, maintenable sans écrire la moindre ligne de code et par n’importe qui. <span class='strong'>Ideal si vous etes néophyte !</span>";
-				var section_2_p2 = "Dans Wordpress vous customisez vous-meme les pages, les couleurs, lespolices, etc. et bien sur vous creez votre propre contenu. <span class='strong'>C’est l’outil parfait pour creer son blog !</span>";
-				var section_2_p3 = "Wordpress est livre avec un ou plusieurs design de qualité professionnelle. Vous choisissez celui qui vous plait et remplacez les logo, les images et les textes par les votres. <span class='strong'>Ideal pour creer rapidement de belles vitrines d’entreprise  !</span>";
-				var section_2_p4 = "<span class='strong'>Mais Wordpress a une courbe d’apprentissage qui peut vous décourager si vous n’y connaissez rien.</span>";
-				var section_2_p5 = "Lorsque vous savez deja vous en servir, vous découvrez <span class='strong'>qu’il n’est pas possible de modifier les thèmes en profondeur sans avoir de bonnes connaissances en code.</span>";
-				$('#section-2-p6').css('display', 'inline-block').html('<span class="strong">Je vous apporte mon aide pour creer un site de zéro ou apporter toutes les modifications que vous souhaitez a un theme existant.</span>');
-				$('#section-2-p7').css('display', 'inline-block').html('<span class="strong">Je travaille avec Divi, l’un des themes Wordpress les plus puissants qui permet de creer n’importe quel design en un temps record !</span>');
+				var section_2_p1 = "Wordpress est un site clé en main, maintenable sans écrire la moindre ligne de code et par n’importe qui. <span class='strong'>Ideal si vous êtes néophyte !</span>";
+				var section_2_p2 = "Dans Wordpress vous customisez vous-même les pages, les couleurs, les polices, etc. et bien sur vous créez votre propre contenu. <span class='strong'>C’est l’outil parfait pour créer son blog !</span>";
+				var section_2_p3 = "Wordpress est livré avec un ou plusieurs designs de qualité professionnelle. Vous choisissez celui qui vous plait et remplacez les logos, les images et les textes par les vôtres. <span class='strong'>Idéal pour créer rapidement de belles vitrines d’entreprise  !</span>";
+				var section_2_p4 = "<span class='strong'>Mais Wordpress à une courbe d’apprentissage qui peut vous décourager si vous n’y connaissez rien.</span>";
+				var section_2_p5 = "Lorsque vous savez déjà vous en servir, vous découvrez <span class='strong'>qu’il n’est pas possible de modifier les thèmes en profondeur sans avoir de bonnes connaissances en code.</span>";
+				$('#section-2-p6').css('display', 'inline-block').html('<span class="strong">Je vous apporte mon aide pour créer un site de zéro ou apporter toutes les modifications que vous souhaitez a un thème existant.</span>');
+				$('#section-2-p7').css('display', 'inline-block').html('<span class="strong">Je travaille avec Divi, l’un des thèmes Wordpress les plus puissants qui permet de créer n’importe quel design en un temps record !</span>');
 
 				var section_2_p8 = "<span class='strong'>« From sratch »  signifie « partir de zéro »</span>. Travailler « from scratch » c’est donc coder un site par soi-même.";
-				var section_2_p9 = "<span class='strong'>Autant dire que pour cela, il faut être calée en code</span>. C’est pourquoi la plupart des gens choisissent d’utiliser Wordpress qui ne demande aucune connaissance particulière.";
+				var section_2_p9 = "<span class='strong'>Autant dire que pour cela, il faut être calé en code</span>. C’est pourquoi la plupart des gens choisissent d’utiliser Wordpress qui ne demande aucune connaissance particulière.";
 				var section_2_p10 = "Mais travailler « from scratch » a plein d'avantages. <span class='strong'>D’abord il permet d’être libre dans sa manière de travailler</span>. Wordpress peut être assez contraignant et il arrive qu’on s’arrache les cheveux pour changer un petit détail. Travailler avec votre propre code, permet au contraire de toujours savoir ou on en est.";
-				var section_2_p11 = "<span class='strong'>De plus travailler « from scratch » permet de construire un site sophistiqué, avec des fonctionnalités innovantes</span>. Genial si vous voulez lancer un nouveau business digital !";
+				var section_2_p11 = "<span class='strong'>De plus travailler « from scratch » permet de construire un site sophistiqué, avec des fonctionnalités innovantes</span>. Génial si vous voulez lancer un nouveau business digital !";
 				$('#section-2-p12').css('display', 'block').html('<span class="strong">Je développe vos applications en HTML, javascript et PHP, seul ou en collaboration avec vos équipes, avec ou sans framework.</span>');
 
-				$('#round-p').css('text-align', 'justify').html("Etes vous plutôt Wordpress ou « from scratch » ? Voulez-vous construire un blog, une vitrine pour votre entreprise ou creer une application innovante ? Si vous avez avez fait votre choix ou avez besoin d’un conseil, ");
+				$('#round-p').css('text-align', 'justify').html("Etes vous plutôt Wordpress ou « from scratch » ? Voulez-vous construire un blog, une vitrine pour votre entreprise ou créer une application innovante ? Si vous avez avez fait votre choix ou avez besoin d’un conseil, ");
 
 
 				break;
@@ -196,12 +196,12 @@ $(window).bind("load", function() {
 				var paragraph_title = "D’une maquette";
 				var paragraph_title_2 = "Qu’il soit \« responsive \» ";
 
-				var section_2_p1 = "Rien a voir avec une maquette d’architecte ! Et pourtant ça y ressemble : de même que <span class='strong'>la maquette d’un bâtiment est un prototype à petite échelle, de même la maquette est le prototype visuel d’un site.</span>";
+				var section_2_p1 = "Rien à voir avec une maquette d’architecte ! Et pourtant ça y ressemble : de même que <span class='strong'>la maquette d’un bâtiment est un prototype à petite échelle, de même la maquette est le prototype visuel d’un site.</span>";
 				var section_2_p2 = "Pour la créer, le designer utilise des images et des dessins faits par ordinateurs. Il simule ainsi l’apparence de votre futur site pour vous en donner une idée aussi précise que possible. <span class='strong'>Pour vous, la maquette a donc un avantage : elle permet de définir votre identité visuelle avec précision.</span>";
 				var section_2_p3 = "<span class='strong'>La maquette est aussi très utile au développeur web </span>: elle lui donne une idée précise de ce qu’il va coder et lui évite d’ « improviser » son design au dernier moment. Pour vous c’est l’assurance que votre identité visuelle sera respectée.";
 				var section_2_p4 = "<span class='strong'>Mais les services d’un designer sont souvent très chers</span> et seules les entreprises ont les moyens de se les offrir.";
 				var section_2_p5 = "<span class='strong'>Si vous travaillez sur Wordpress, vous n’aurez sans doute pas besoin d’un designer</span>. Les themes sont souvent biens faits et suffisent dans la plupart des cas. ";
-				$('#section-2-p6').css('display', 'inline-block').html('<span class="strong">Mais si vous souhaitez creer votre design ou votre thème personnalisé, vous aurez sans doute besoin d’aide.</span>');
+				$('#section-2-p6').css('display', 'inline-block').html('<span class="strong">Mais si vous souhaitez créer votre design ou votre thème personnalisé, vous aurez sans doute besoin d’aide.</span>');
 				$('#section-2-p7').css('display', 'inline-block').html('<span class="strong">Je vous accompagne dans la création de votre identité visuelle et réalise votre maquette. Je me sers d’outils puissants comme Adobe XD qui permettent d’obtenir un résultat rapide et professionnel.</span>');
 
 				var section_2_p8 = "« Responsive » veut dire « adaptable » en anglais. <span class='strong'>Un design « responsive » veut dire qu’il s’adapte à différents format d’écrans (smartphone, tablette, etc.).</span>";
@@ -210,7 +210,7 @@ $(window).bind("load", function() {
 				var section_2_p11 = "On comprend qu’aujourd’hui, la première exigence des clients est d’avoir un site responsive. <span class='strong'>Pour ma part cela va tellement de soi que « site web » et « responsive » sont parfaitement synonymes !</span>";
 				$('#section-2-p12').css('display', 'none');
 
-				$('#round-p').css('text-align', 'justify').html("Vous souhaitez un design a votre image, qui reste beau sur les différentes tailles d’écran ? N’attendez plus :");
+				$('#round-p').css('text-align', 'justify').html("Vous souhaitez un design à votre image, qui reste beau sur les différentes tailles d’écran ? N’attendez plus :");
 
 				break;
 
@@ -222,16 +222,16 @@ $(window).bind("load", function() {
 				var paragraph_title = "Un code adapté";
 				var paragraph_title_2 = "Un contenu pertinent";
 
-				var section_2_p1 = "A quoi sert d’avoir un site web si personne ne le voit ? Ça semble tellement évident que bon nombre de gens croient que développeur web et spécialiste du référencement c’est la même chose. <span class='strong'>Mais coder un site et booster votre position sur Google sont deux métiers tres différents !</span> L’un demande de parler un langage informatique pointu et l’autre de savoir ruser avec les robots de Google. Rien à voir !";
+				var section_2_p1 = "A quoi sert d’avoir un site web si personne ne le voit ? Ça semble tellement évident que bon nombre de gens croient que développeur web et spécialiste du référencement c’est la même chose. <span class='strong'>Mais coder un site et booster votre position sur Google sont deux métiers très différents !</span> L’un demande de parler un langage informatique pointu et l’autre de savoir ruser avec les robots de Google. Rien à voir !";
 				var section_2_p2 = "Pourtant il y a certaines choses qu’un développeur comme moi peut faire :";
-				var section_2_p3 = "<span class='strong'>- crée un site qui charge vite</span>. Google adore les sites rapides. Ainsi plus le site est « léger » (code simple et efficace, poids des images réduit, utilisation d’un CDN, etc.), plus il a des chances d’être bien référencé !";
-				var section_2_p4 = "<span class='strong'>- utiliser des « balises » dédiées</span>. Une balise HTML est un petit drapeau qui indique le positionnement (haut, bas, etc.) et la nature des éléments d’une page (titre, paragraphe, citation, etc). Placer ces balises permet a Google de repérer plus facilement vos mots clés. Par ex. La balise « titre » indique a Google le mot le plus important de votre page. Elle doit donc être utilisée avec soin. Il en va de même des balises schéma.org qui identifient plus précisément les éléments de votre page.";
+				var section_2_p3 = "<span class='strong'>- créer un site qui charge vite</span>. Google adore les sites rapides. Ainsi plus le site est « léger » (code simple et efficace, poids des images réduit, utilisation d’un CDN, etc.), plus il a des chances d’être bien référencé !";
+				var section_2_p4 = "<span class='strong'>- utiliser des « balises » dédiées</span>. Une balise HTML est un petit drapeau qui indique le positionnement (haut, bas, etc.) et la nature des éléments d’une page (titre, paragraphe, citation, etc). Placer ces balises permet a Google de repérer plus facilement vos mots clés. Par ex. La balise « titre » indique à Google le mot le plus important de votre page. Elle doit donc être utilisée avec soin. Il en va de même des balises schéma.org qui identifient plus précisément les éléments de votre page.";
 				var section_2_p5 = "<span class='strong'>- utiliser Wordpress (car Google aime le code de Wordpress) et ajouter des plugins dédiés comme Yoats SEO</span>.";
 				$('#section-2-p6').css('display', 'none');
 				$('#section-2-p7').css('display', 'none');
 
-				var section_2_p8 = "Si vous vous êtes déjà intéressés au web, vous avez sans doute entendu parler des fameux « mots clés ». Lorsqu’un utilisateur fait une recherche sur Google, ce dernier va analyser les mots de la recherche et trouver les pages qui les contiennent. <span class='strong'>Un mot clé est donc le moyen de dire à Google que vous êtes la meilleure réponse a la question d’un utilisateur.</span>";
-				var section_2_p9 = "Cela prend toute son importance lorsqu’on crée un business en ligne, car <span class='strong'>trouver les bons mots-clés c’est s’assurer que Google va nous amener les bons clients</span>, c’est-à-dire ceux qui constituent notre cible. Pour prendre un exemple grossier, si je suis opticien j’ai tout intérêt a placer « lunette » dans une de mes pages, car il y a fort à parier que les utilisateurs qui cherchent un opticien tapent « lunette » dans Google. Dans la réalité les choses sont plus complexes évidemment. Mais cela nous donne une petite idée de l’importance des mots-clés !";
+				var section_2_p8 = "Si vous vous êtes déjà intéressés au web, vous avez sans doute entendu parler des fameux « mots clés ». Lorsqu’un utilisateur fait une recherche sur Google, ce dernier va analyser les mots de la recherche et trouver les pages qui les contiennent. <span class='strong'>Un mot clé est donc le moyen de dire à Google que vous êtes la meilleure réponse à la question d’un utilisateur.</span>";
+				var section_2_p9 = "Cela prend toute son importance lorsqu’on crée un business en ligne, car <span class='strong'>trouver les bons mots-clés c’est s’assurer que Google va nous amener les bons clients</span>, c’est-à-dire ceux qui constituent notre cible. Pour prendre un exemple grossier, si je suis opticien j’ai tout intérêt à placer « lunette » dans une de mes pages, car il y a fort à parier que les utilisateurs qui cherchent un opticien tapent « lunette » dans Google. Dans la réalité les choses sont plus complexes évidemment. Mais cela nous donne une petite idée de l’importance des mots-clés !";
 				var section_2_p10 = "<span class='strong'>Mais le référencement est un métier et le meilleur moyen d’être bien placé sur Google est de faire appel à un professionnel</span>. Malheureusement ils sont souvent très chers et seules les entreprises ont les moyens de se les payer.";
 				var section_2_p11 = "Pourtant, à mon niveau, je peux vous apporter une aide. Ancien professeur de philosophie, j’ai des facilités pour organiser, exprimer et clarifier mes idées. Pendant 10 ans, j’ai corrigé et affiné mon expression écrite. <span class='strong'>Je peux vous aider à créer un contenu qui ne nuise pas à votre visibilité ou qui, dans le meilleur des cas, y soit favorable.</span>";
 				$('#section-2-p12').css('display', 'none');
@@ -257,8 +257,8 @@ $(window).bind("load", function() {
 				case "dispo" :
 				var sectionTitre = "Disponibilité";
 				var sectionP1 = "Vous avez besoin de temps pour concevoir votre site web mais l’inspiration vous vient au coup par coup ? Ça tombe bien : je suis disponible pour échanger avec vous 24h/ 24 et 7j/ 7."
-				var sectionP2 = "Quand j’étais enseignant, ce qui me frustrait était qu’on nous poussait a faire nos journées, sans plus, en attendant les vacances. Pour ma part, j’étais incapable de compter mes heures car mon travail me passionnait. C’est la même chose dans le développement web. Tout nouveau projet me stimule, me passionne. Qu’il soit petit ou grand, c’est toujours un défi à relever et je ne peux pas m’arrêter avant d’être arrivé au bout."
-				var sectionP3 = "Ainsi que vous ayez ou non du temps à consacrer a votre projet, je serai toujours disponible pour en parler avec vous. Et pour cause : chaque fois que vous me faites une remarque vous faites avancer mon travail. Alors n’hesitez plus : contactez-moi dès maintenant et commençons à travailler ensemble !"
+				var sectionP2 = "Quand j’étais enseignant, ce qui me frustrait était qu’on nous poussait à faire nos journées, sans plus, en attendant les vacances. Pour ma part, j’étais incapable de compter mes heures car mon travail me passionnait. C’est la même chose dans le développement web. Tout nouveau projet me stimule, me passionne. Qu’il soit petit ou grand, c’est toujours un défi à relever et je ne peux pas m’arrêter avant d’être arrivé au bout."
+				var sectionP3 = "Ainsi que vous ayez ou non du temps à consacrer à votre projet, je serai toujours disponible pour en parler avec vous. Et pour cause : chaque fois que vous me faites une remarque vous faites avancer mon travail. Alors n’hésitez plus : contactez-moi dès maintenant et commençons à travailler ensemble !"
 				break;
 
 			}
