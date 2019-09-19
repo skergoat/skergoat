@@ -57,6 +57,8 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</div> <!-- #page-container -->
 
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/loader.js"></script>
 
 	<script>
 
@@ -67,7 +69,8 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</script>
 
-	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/loader.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script> -->
+
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/scroll.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/parallax.js"></script>
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/button.js"></script>
