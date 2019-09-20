@@ -57,7 +57,6 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</div> <!-- #page-container -->
 
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/loader.js"></script>
 
 	<script>
