@@ -19,6 +19,7 @@
 
 	$template_directory_uri = get_template_directory_uri();
 ?>
+	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script> -->
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
@@ -31,7 +32,9 @@
 	<script type="text/javascript" src="https://www.skergoat.com/wp-content/themes/Divi-child/js/contactForm.js"></script>
 
 	<?php wp_head(); ?>
-	
+
+	<link rel="stylesheet" href="https://www.skergoat.com/wp-content/themes/Divi-child/mobile.css"/>
+
 </head>
 <body <?php body_class(); ?>>
 <span style="position:absolute;top:0px;" id="span-info"></span>

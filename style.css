@@ -287,11 +287,11 @@ nav {
     height: 100vh;
     display: flex;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
 #main {
-    width: 600vw
+    width: 600vw;
 }
 
 #main-2 {
@@ -303,12 +303,12 @@ nav {
 .sub {
     position: absolute;
     left: 0;
-    top: 0
+    top: 0;
 }
 
 .section {
     width: 100vw;
-    height: 100vh
+    height: 100vh;
 }
 
 .parallax-background {
@@ -316,18 +316,18 @@ nav {
     width: 1000vw;
     max-width: 1000vw;
     position: absolute;
-    z-index: 1
+    z-index: 1;
 }
 
 #background-0 {
     background: url(https://www.skergoat.com/wp-content/uploads/2019/08/Endless-Constellation.gif) repeat;
     z-index: 1;
-    max-width: 1000vw
+    max-width: 1000vw;
 }
 
 #background-2 {
     z-index: 2;
-    max-width: 150vw
+    max-width: 150vw;
 }
 
 .bulle-container {
@@ -1737,145 +1737,4 @@ div.wpcf7-validation-errors {
         border-radius: 25px;
         font-size: 15px
     }
-}
-
-@media all and (max-width:450px) {
-    .bulle {
-        width: 90%;
-        padding-top: 10px;
-        padding-bottom: 10px
-    }
-    .bulle-content {
-        padding: 0
-    }
-    #createur-de-site-web {
-        font-size: 21px;
-        width: 100%;
-        margin: auto;
-        line-height: 30px
-    }
-    .scroll-container {
-        top: 80vh;
-        display: none
-    }
-    .action {
-        width: 150px;
-        font-size: 15px
-    }
-    .skill-container {
-        margin-top: 250px
-    }
-    .button-small {
-        width: 100px
-    }
-    .allons-y {
-        top: -20px
-    }
-    .allons-y-container {
-        margin-top: 300px
-    }
-    .bulle-container {
-        top: 70px
-    }
-    .bulle-content-p {
-        font-size: 15px
-    }
-    .avatar {
-        height: 50px;
-        width: 50px
-    }
-    .container-avatar {
-        height: auto
-    }
-    #loadedBuble-1,
-    #loadedBuble-2,
-    #loadedBuble-3,
-    #loadedBuble-4,
-    #loadedBuble-5,
-    #loadedBuble-img,
-    #loadedBuble-p-1,
-    #loadedBuble-p-3,
-    .loadedBuble {
-        width: 100%
-    }
-    .content-container {
-        padding: 30px 40px 10px 30px;
-        padding-top: 40px
-    }
-    .title-left-right {
-        position: relative
-    }
-    .number-left-right {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        z-index: 1
-    }
-    .category-left-right {
-        width: 100%;
-        text-align: center;
-        position: relative;
-        z-index: 2
-    }
-    .subtitle {
-        font-size: 16px
-    }
-    .circle {
-        padding-bottom: 130px
-    }
-    .circle-p {
-        width: 60%
-    }
-    .horizontal-bar {
-        display: none
-    }
-    br {
-        display: none
-    }
-    .level-img {
-        width: 100%;
-        height: 100%;
-        top: 0
-    }
-    #content-container-4 {
-        padding: 100px 30px 10px 30px
-    }
-    .level-img-container {
-        height: auto
-    }
-    .number-5 {
-        left: 30%
-    }
-    #projet-3 {
-        background: url(https://www.skergoat.com/wp-content/uploads/2019/09/velov-res.jpg) no-repeat
-    }
-    #projet-2 {
-        background: url(https://www.skergoat.com/wp-content/uploads/2019/09/strasbourg-res.jpg) no-repeat
-    }
-    #projet-1 {
-        background: url(https://www.skergoat.com/wp-content/uploads/2019/09/webagency-res.jpg) no-repeat
-    }
-}
-
-@keyframes page-load {
-    from {
-        background-color: #ffc422
-    }
-    to {
-        background-color: #c0392b
-    }
-}
-
-.page-loading::before {
-    content: " ";
-    display: block;
-    position: fixed;
-    z-index: 10;
-    height: 2px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #06d;
-    animation: page-load infinite ease-out 2s;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
 }
