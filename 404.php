@@ -34,7 +34,7 @@
 		    </div>
 
 		    <div class="container-avatar">
-		      <img src="https://www.skergoat.com/wp-content/uploads/2019/09/stephane.png" alt="identity_picture" class="avatar"/>
+		      <img src="https://www.skergoat.com/wp-content/uploads/2019/09/stephane.jpg" alt="404" class="avatar"/>
 		    </div>
 
 		</div> 

@@ -2,6 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="h0t4LpK2FJQ9WIHz0zms6eukZu9ee3sU7hT8jXfcsIA" />
 <?php
 	elegant_description();
 	elegant_keywords();
@@ -25,21 +27,10 @@
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/beforeLoad.js"></script>
-	<script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/contactForm.js"></script>
-	
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/css/all.min.css"></script> -->
-	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/fontawesome/js/all.min.js"></script> -->
-
-	<!-- <script src="https://www.skergoat.com/wp-content/themes/Divi-child/js/jquery.min.js"></script> -->
-
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
+	<script type="text/javascript" src="https://www.skergoat.com/wp-content/themes/Divi-child/js/beforeLoad.js"></script>
+	<script type="text/javascript" src="https://www.skergoat.com/wp-content/themes/Divi-child/js/contactForm.js"></script>
 
 	<?php wp_head(); ?>
-
-	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script> -->
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 	
 </head>
 <body <?php body_class(); ?>>

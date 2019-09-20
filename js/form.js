@@ -1,82 +1,21 @@
-$(function() {
-
-	// form style and attr
-
-	$('#thanks').css('display', 'none');
-	
-	var i = 0;
-	var i2 = 0
-	// var i3 = 0
-
-	$('form p').each(function(e) {
-
-		i++;
-
-		 $(this).attr('id', 'input-' + i).addClass('inputs').css('margin-bottom', '400px').append('<button class="button-form" id="' + i + '" data-url="#input-' + (i + 1) + '">suivant</button>');
-
-	});
-
-	$('.wpcf7-form-control').each(function() {
-
-		i2++;
-
-		$(this).attr('data-url', '#input-' + i2);
-
-	});
-
-	$('#input-1').addClass('active').prepend('<h4 style="font-weight:bold;padding-bottom:30px;">Pour commencer, faisons connaissance : </h4>');
-	$('#input-6 button').remove();
-	$('#input-6').css('margin-bottom', '300px');
-
-
-	$('.button-form').click(function(e) {
-
-		e.preventDefault();
-
-		var id = $(this).attr('id');
-		var data = $(this).attr('data-url');
-		var x = $(data).offset().top;
-
-		// input opacity 
-		$('#input-' + id).removeClass('active');
-		$(data).addClass('active');
-
-		// var width = $(window).width();
-
-		var value;
-
-		if(data == '#input-3') {
-
-			value = x - 100;
-		}
-		else if(data == '#input-6') {
-
-			value = $(document).height() + 200;
-		}
-		else {
-
-			value = x - 200;
-		}
-
-		// scroll
-		$('html, body').animate({ 
-			scrollTop:(value) + "px" 	
-		}, 300);
-
-		return false;
-
-	});
-
-	$('.wpcf7-form-control').focus(function() {
-
-		var data = $(this).attr('data-url');
-
-		if(!$(data).hasClass('active')) {
-
-			$('.inputs').not(data).removeClass('active');
-			$(data).addClass('active');
-		}
-		
-	});
-
+(function() {
+    $("#thanks").css("display", "none");
+    var t = 0,
+        a = 0;
+    $("form p").each(function(a) {
+        t++, $(this).attr("id", "input-" + t).addClass("inputs").css("margin-bottom", "400px").append('<button class="button-form" id="' + t + '" data-url="#input-' + (t + 1) + '">suivant</button>')
+    }), $(".wpcf7-form-control").each(function() {
+        a++, $(this).attr("data-url", "#input-" + a)
+    }), $("#input-1").addClass("active").prepend('<h4 style="font-weight:bold;padding-bottom:30px;">Pour commencer, faisons connaissance : </h4>'), $("#input-6 button").remove(), $("#input-6").css("margin-bottom", "300px"), $(".button-form").click(function(t) {
+        t.preventDefault();
+        var a, n = $(this).attr("id"),
+            o = $(this).attr("data-url"),
+            i = $(o).offset().top;
+        return $("#input-" + n).removeClass("active"), $(o).addClass("active"), a = "#input-3" == o ? i - 100 : "#input-6" == o ? $(document).height() + 200 : i - 200, $("html, body").animate({
+            scrollTop: a + "px"
+        }, 300), !1
+    }), $(".wpcf7-form-control").focus(function() {
+        var t = $(this).attr("data-url");
+        $(t).hasClass("active") || ($(".inputs").not(t).removeClass("active"), $(t).addClass("active"))
+    })
 });
