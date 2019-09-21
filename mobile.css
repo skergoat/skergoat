@@ -1,11 +1,9 @@
 @media all and (max-width:450px) {
 
-
     body {
 
         overflow:hidden;
     }
-
 
     .bulle {
         width: 90%;
@@ -134,11 +132,50 @@
         width:100vw;
         display: block;
         overflow: hidden;
+        /**/
+        background:#3F0E63;
     }
 
-    .section {
+    /*.section {
 
+    }*/
+
+    /**/
+
+    .hamburger span {
+
+        background:white;
     }
+
+    #menu-mobile {
+
+        background:rgba(0, 0, 0, 0.6);
+    }
+
+    #menu-mobile li {
+
+        border-top:1px solid white;
+    }
+
+    #menu-mobile li a {
+
+        color:white;
+    }
+
+    #menu-mobile li a:hover {
+        background: rgba(255, 255, 255, 0.5);
+        transition: .2s ease-in-out
+    }
+
+    .allons-y {
+
+        background:#484848;
+        border:#484848;
+        color:white;
+    }
+
+
+    /**/
 
     .et_pb_section_1 {
 
@@ -149,6 +186,8 @@
 
         max-width:100%;
         width:100%;
+        /**/
+        display:none;
     }
 
     .parallax-background {

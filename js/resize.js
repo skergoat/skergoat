@@ -1,44 +1,3 @@
-// $(window).bind("load", function() {
-//     function e() {
-//         $("body").hasClass("offWheel") || (new Date - i < s ? setTimeout(e, s) : (t = !1, $("body").removeClass("resize")))
-//     }
-
-//     function a(e) {
-//         var a = e.left;
-//         $("html, body").animate({
-//             scrollLeft: a + "px"
-//         }, 0)
-//     }
-//     var i, t = !1,
-//         s = 200;
-//     $(window).resize(function() {
-//         var n = $("body").attr("id"),
-//             o = $("#info-name").text(),
-//             h = $(o + " .page").attr("id"),
-//             d = $("#" + h).height();
-//         if ($("#main-2").css({
-//                 "max-height": d,
-//                 height: d
-//             }), $("body").hasClass("offWheel")) {
-//             if ($("#span-info").hasClass("who")) l = $("#sub-1").position();
-//             else var l = $("#sub-" + n).position();
-//             a(l)
-//         } else {
-//             $("body").addClass("resize"), a(l = $("#section-" + n).position()), i = new Date, !1 === t && (t = !0, setTimeout(e, s))
-//         }
-//         var r = $(window).width();
-//         $(".hamburger").hasClass("responsive") ? (r > 780 && $("nav").animate({
-//             height: "90px"
-//         }, 0), r < 780 && $("nav").animate({
-//             height: "345px"
-//         }, 0)) : (r > 780 && $("nav").animate({
-//             height: "90px"
-//         }, 0), r <= 780 && $("nav").animate({
-//             height: "55px"
-//         }, 0))
-//     })
-// });
-
 $(window).bind("load", function() {
 
     // enable scroll after resize
@@ -59,10 +18,23 @@ $(window).bind("load", function() {
     function scrollLeft(x) {
 
         var left = x.left;
-        var top = x.top;
 
         $('html, body').animate({ 
-            scrollLeft:left + "px",
+            scrollLeft:left + "px"
+        }, 0);
+
+    }
+
+     function scrollLeftTop(x) {
+
+        var left = x.left;
+        var top = x.top;
+
+        console.log('left : ' + x.left);
+        console.log('top : ' + x.top);
+
+        $('html, body').animate({ 
+            scrollLeft: left + "px",
             scrollTop:top + "px"
         }, 0);
 
@@ -108,12 +80,20 @@ $(window).bind("load", function() {
             // disable scroll to keep the same 'body' id and stay at current section 
             $('body').addClass('resize');
 
-            // if($(this).width() > 450) {
+            // $('body').css('overflow', 'hidden');
 
             var x = $('#section-' + body_id).position();
-            scrollLeft(x);
+            scrollLeftTop(x);
 
-            // }
+            if($(this).width() > 450) {
+
+                $('#main').css('display', 'flex');
+
+            } 
+            if($(this).width() <= 450) {
+
+                $('#main').css('display', 'block');
+            }
 
             rtime = new Date();
             if (timeout === false) {
@@ -155,7 +135,61 @@ $(window).bind("load", function() {
             }
 
         }
-  
+
+        if($(this).width() > 450) {
+
+            $('#go-right').css('right', '0px');
+            $('#go-left').css('left', '0px');
+            $('#main').css('transition', '0s').css('background', 'transparent');
+            $("#background-0").css("top", "0px");
+        } 
+        else if($(this).width() <= 450) {
+
+            $('#go-right').css({'right':'5px'});
+            $('#go-left').css({'left':'auto', 'right':'5px'});
+            $('#main').css('transition', '0.3s ease-in-out');
+
+            var scrollTop = $(this).scrollTop();
+
+            var height = $('.section').height();
+            height = parseInt(height);
+
+            if(scrollTop > -1 && scrollTop <= height * (70 / 100)) { 
+
+                $('#main').css({'transition':'0s', 'background':'#3F0E63'});
+            }
+
+            if(scrollTop >= height * (70 / 100) && scrollTop <= (height * 2 * 80 / 100)) {
+
+                $('#main').css({'transition':'0s', 'background':'#EB5F74'});
+
+            }
+
+            if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
+
+                $('#main').css({'transition':'0s', 'background':'#4DD5C0'});
+
+            }
+
+            if(scrollTop >= (height * 3 * 90 / 100) && scrollTop <= (height * 4)) {
+
+                $('#main').css({'transition':'0s', 'background':'#FADC6F'});
+            }
+
+            if(scrollTop >= (height * 4 * 90 / 100) && scrollTop <= (height * 5)) {
+
+                $('#main').css({'transition':'0s', 'background':'#459CE7'});
+
+            }
+
+            if(scrollTop >= (height * 5 * 95 / 100) && scrollTop <= (height * 6)) {
+
+                $('#main').css({'transition':'0s', 'background':'#4DD5C0'});
+
+            }
+
+        }
+
     });
 
 });

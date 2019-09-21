@@ -46,10 +46,10 @@ $(window).bind("load", function() {
             document.ontouchmove = function(e){ return true; }
             $('body').css('touch-action', 'auto');
 
-            if(this.width <= 450) { 
+            // if(this.width <= 450) { 
 
-                $('body').css('overflow', 'scroll');
-            }
+            $('body').css('overflow', 'scroll');
+            // }
 
         }
 
@@ -89,7 +89,7 @@ $(window).bind("load", function() {
                 // disable scroll on IOS 
                 document.ontouchmove = function(e){ e.preventDefault(); }
                 // disable scroll on android 
-                $('body').css('touch-action', 'none');
+                    $('body').css('touch-action', 'none');
 
                 if(this.width <= 450) {
 
@@ -236,13 +236,13 @@ $(window).bind("load", function() {
                 var section_2_p2 = "Pour la créer, le designer utilise des images et des dessins faits par ordinateurs. Il simule ainsi l’apparence de votre futur site pour vous en donner une idée aussi précise que possible. <span class='strong'>Pour vous, la maquette a donc un avantage : elle permet de définir votre identité visuelle avec précision.</span>";
                 var section_2_p3 = "<span class='strong'>La maquette est aussi très utile au développeur web </span>: elle lui donne une idée précise de ce qu’il va coder et lui évite d’ « improviser » son design au dernier moment. Pour vous c’est l’assurance que votre identité visuelle sera respectée.";
                 var section_2_p4 = "<span class='strong'>Mais les services d’un designer sont souvent très chers</span> et seules les entreprises ont les moyens de se les offrir.";
-                var section_2_p5 = "<span class='strong'>Si vous travaillez sur Wordpress, vous n’aurez sans doute pas besoin d’un designer</span>. Les themes sont souvent biens faits et suffisent dans la plupart des cas. ";
+                var section_2_p5 = "<span class='strong'>Si vous travaillez sur Wordpress, vous n’aurez sans doute pas besoin d’un designer</span>. Les thèmes sont souvent biens faits et suffisent dans la plupart des cas. ";
                 $('#section-2-p6').css('display', 'inline-block').html('<span class="strong">Mais si vous souhaitez créer votre design ou votre thème personnalisé, vous aurez sans doute besoin d’aide.</span>');
                 $('#section-2-p7').css('display', 'inline-block').html('<span class="strong">Je vous accompagne dans la création de votre identité visuelle et réalise votre maquette. Je me sers d’outils puissants comme Adobe XD qui permettent d’obtenir un résultat rapide et professionnel.</span>');
 
                 var section_2_p8 = "« Responsive » veut dire « adaptable » en anglais. <span class='strong'>Un design « responsive » veut dire qu’il s’adapte à différents format d’écrans (smartphone, tablette, etc.).</span>";
                 var section_2_p9 = "<span class='strong'>Autrefois, l’ordinateur était le seul moyen de consulter internet</span>.  On ne prêtait alors aucune attention aux éventuels changements de taille des écrans. Ainsi lorsqu’on réduisait la taille du navigateur, le site sortait de la page et le design pouvait sauter.";
-                var section_2_p10 = "<span class='strong'>Mais aujourd’hui les choses ont changées : le smartphone a remplacé l’ordinateur pour la consulation d’internet et les designers ont dû suivre</span>. Ils ont donc créé un design « responsive », adaptable aux différentes tailles d’écrans. Verifiez vous-mêmes : si vous reduisez la taille de cette page, vous verrez que mon site s’adapte parfaitement.";
+                var section_2_p10 = "<span class='strong'>Mais aujourd’hui les choses ont changé : le smartphone a remplacé l’ordinateur pour la consulation d’internet et les designers ont dû suivre</span>. Ils ont donc créé un design « responsive », adaptable aux différentes tailles d’écrans. Verifiez vous-mêmes : si vous reduisez la taille de cette page, vous verrez que mon site s’adapte parfaitement.";
                 var section_2_p11 = "On comprend qu’aujourd’hui, la première exigence des clients est d’avoir un site responsive. <span class='strong'>Pour ma part cela va tellement de soi que « site web » et « responsive » sont parfaitement synonymes !</span>";
                 $('#section-2-p12').css('display', 'none');
 
@@ -261,13 +261,13 @@ $(window).bind("load", function() {
                 var section_2_p1 = "A quoi sert d’avoir un site web si personne ne le voit ? Ça semble tellement évident que bon nombre de gens croient que développeur web et spécialiste du référencement c’est la même chose. <span class='strong'>Mais coder un site et booster votre position sur Google sont deux métiers très différents !</span> L’un demande de parler un langage informatique pointu et l’autre de savoir ruser avec les robots de Google. Rien à voir !";
                 var section_2_p2 = "Pourtant il y a certaines choses qu’un développeur comme moi peut faire :";
                 var section_2_p3 = "<span class='strong'>- créer un site qui charge vite</span>. Google adore les sites rapides. Ainsi plus le site est « léger » (code simple et efficace, poids des images réduit, utilisation d’un CDN, etc.), plus il a des chances d’être bien référencé !";
-                var section_2_p4 = "<span class='strong'>- utiliser des « balises » dédiées</span>. Une balise HTML est un petit drapeau qui indique le positionnement (haut, bas, etc.) et la nature des éléments d’une page (titre, paragraphe, citation, etc). Placer ces balises permet a Google de repérer plus facilement vos mots clés. Par ex. La balise « titre » indique à Google le mot le plus important de votre page. Elle doit donc être utilisée avec soin. Il en va de même des balises schéma.org qui identifient plus précisément les éléments de votre page.";
+                var section_2_p4 = "<span class='strong'>- utiliser des « balises » dédiées</span>. Une balise HTML est un petit drapeau qui indique le positionnement (haut, bas, etc.) et la nature des éléments d’une page (titre, paragraphe, citation, etc). Placer ces balises permet à Google de repérer plus facilement vos mots clés. Par ex. la balise « titre » indique à Google le mot le plus important de votre page. Elle doit donc être utilisée avec soin. Il en va de même des balises schema.org qui identifient plus précisément les éléments de votre page.";
                 var section_2_p5 = "<span class='strong'>- utiliser Wordpress (car Google aime le code de Wordpress) et ajouter des plugins dédiés comme Yoats SEO</span>.";
                 $('#section-2-p6').css('display', 'none');
                 $('#section-2-p7').css('display', 'none');
 
-                var section_2_p8 = "Si vous vous êtes déjà intéressés au web, vous avez sans doute entendu parler des fameux « mots clés ». Lorsqu’un utilisateur fait une recherche sur Google, ce dernier va analyser les mots de la recherche et trouver les pages qui les contiennent. <span class='strong'>Un mot clé est donc le moyen de dire à Google que vous êtes la meilleure réponse à la question d’un utilisateur.</span>";
-                var section_2_p9 = "Cela prend toute son importance lorsqu’on crée un business en ligne, car <span class='strong'>trouver les bons mots-clés c’est s’assurer que Google va nous amener les bons clients</span>, c’est-à-dire ceux qui constituent notre cible. Pour prendre un exemple grossier, si je suis opticien j’ai tout intérêt à placer « lunette » dans une de mes pages, car il y a fort à parier que les utilisateurs qui cherchent un opticien tapent « lunette » dans Google. Dans la réalité les choses sont plus complexes évidemment. Mais cela nous donne une petite idée de l’importance des mots-clés !";
+                var section_2_p8 = "Si vous vous êtes déjà intéressé au web, vous avez sans doute entendu parler des fameux « mots clés ». Lorsqu’un utilisateur fait une recherche sur Google, ce dernier va analyser les mots de la recherche et trouver les pages qui les contiennent. <span class='strong'>Un mot clé est donc le moyen de dire à Google que vous êtes la meilleure réponse à la question d’un utilisateur.</span>";
+                var section_2_p9 = "Cela prend toute son importance lorsqu’on crée un business en ligne, car <span class='strong'>trouver les bons mots-clés c’est s’assurer que Google va nous amener les bons clients</span>, c’est-à-dire ceux qui constituent notre cible. Pour prendre un exemple grossier, si je suis opticien j’ai tout intérêt à placer « lunettes » dans une de mes pages, car il y a fort à parier que les utilisateurs qui cherchent un opticien tapent « lunette » dans Google. Dans la réalité les choses sont plus complexes évidemment. Mais cela nous donne une petite idée de l’importance des mots-clés !";
                 var section_2_p10 = "<span class='strong'>Mais le référencement est un métier et le meilleur moyen d’être bien placé sur Google est de faire appel à un professionnel</span>. Malheureusement ils sont souvent très chers et seules les entreprises ont les moyens de se les payer.";
                 var section_2_p11 = "Pourtant, à mon niveau, je peux vous apporter une aide. Ancien professeur de philosophie, j’ai des facilités pour organiser, exprimer et clarifier mes idées. Pendant 10 ans, j’ai corrigé et affiné mon expression écrite. <span class='strong'>Je peux vous aider à créer un contenu qui ne nuise pas à votre visibilité ou qui, dans le meilleur des cas, y soit favorable.</span>";
                 $('#section-2-p12').css('display', 'none');
@@ -370,6 +370,11 @@ $(window).bind("load", function() {
 
             $('#go-left').css({'display': 'block', 'left':'0px'});
             $('#go-right').css({'display':'block', 'right':'0px'});
+
+            // if($('body').hasClass('ofWheel')) {
+
+               // $('#background-0').css('top', '0px'); 
+            // }
         }
         else {
 

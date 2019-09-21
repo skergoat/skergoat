@@ -320,6 +320,7 @@ nav {
 }
 
 #background-0 {
+    /*display:none;*/
     background: url(https://www.skergoat.com/wp-content/uploads/2019/08/Endless-Constellation.gif) repeat;
     z-index: 1;
     max-width: 1000vw;

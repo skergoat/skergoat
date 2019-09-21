@@ -38,11 +38,8 @@ $(function() {
     var windowWidth = $(window).width();
 
     var a = $(this).scrollLeft();
-            // e = $("#main").css("width");
-        // e = parseInt(e);
+          
     var s = $(".section").width();
-        // l = e - ((s = parseInt(s)) + 4);
-    // a >= l && $(".scroll-flex").addClass("hide-scroll"), a < l && $(".scroll-flex").removeClass("hide-scroll"), 
 
     $("#example-one").append("<li id='magic-line'></li>");
     var o, n = $("#magic-line");
@@ -57,25 +54,7 @@ $(function() {
         });
     }
 
-    if(windowWidth > 450) {
-
-        (a > -1 && a <= .25 * s) && ((o = new t).bubleBig(), (o = new t("Bonjour !", "Je suis Stéphane")).textBig(), o.buttonBig(), $("#button-buble-1").show(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "1"), $("#go-left").attr("data-url", "#section-1"), $("#go-right").attr("data-url", "#section-2"));
-        a >= .25 * s && a <= 2 * s * 80 / 100 && ((o = new t).bubleSmall(), (o = new t("Vous voulez être présent sur le web ?", "Je gère votre :")).textSmall(), $("#bonjour").css({
-            "padding-bottom": "10px",
-            "padding-top": "0px"
-        }), $("#je-suis-stephane").hasClass("display") && $("#je-suis-stephane").removeClass("display"), $(".action").addClass("display"), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "2"), $("#go-left").attr("data-url", "#section-1"), $("#go-right").attr("data-url", "#section-3"));
-        a >= 2 * s * 80 / 100 && a <= 3 * s && ((o = new t).constraint1(), (o = new t("Mon travail se resume en 3 points :")).textSmall(), $("#bonjour").css({
-            "padding-bottom": "0px",
-            "padding-top": "0px"
-        }), $(".action").hasClass("display") || $("body").hasClass("offWheel") || $(".action").addClass("display"), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "3"), $("#go-left").attr("data-url", "#section-2"), $("#go-right").attr("data-url", "#section-4"));
-        a >= 3 * s * 85 / 100 && a <= 4 * s && ((o = new t).bubleBig(), (o = new t("Vous envisagez une collaboration ?", "Nous procédons en 5 étapes :")).textBig(), $("#je-suis-stephane").removeClass("display"), $("#createur-de-site-web").addClass("display"), o.buttonMedium(), $("#button-buble-1").hide(0), $("#button-buble-2").show(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "4"), $("#go-left").attr("data-url", "#section-3"), $("#go-right").attr("data-url", "#section-5"));
-        a >= 4 * s * 90 / 100 && a <= 5 * s && ((o = new t).constraint2(), (o = new t("Avant d'aller plus loin", "Voudriez-vous voir mon travail ?")).textBig(), $("#je-suis-stephane").removeClass("display"), $("#createur-de-site-web").addClass("display"), o.buttonMedium(), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").show(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "5"), $("#go-left").attr("data-url", "#section-4"), $("#go-right").attr("data-url", "#section-6"));
-        a >= 5 * s * 90 / 100 && a <= 6 * s && ((o = new t).bubleSmall(), $(".bulle-container").removeClass("buble-container-top"), (o = new t("Vous souhaitez qu'on travaille ensemble ?")).textSmall(), $("#bonjour").css({
-            "padding-bottom": "0px"
-        }), $("#je-suis-stephane").addClass("display"), o.buttonSmall(), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "6"), $("#go-left").attr("data-url", "#section-5"), $("#go-right").attr("data-url", "#section-6"));
-     
-    }
-    else {
+    if(windowWidth <= 450) {
 
         var scrollTop = $(this).scrollTop();
 
@@ -112,8 +91,13 @@ $(function() {
                 $('body').attr('id', '1'); 
             }
 
-             $("#go-left").attr("data-url", "#section-1");
-              $("#go-right").attr("data-url", "#section-2");
+            $("#go-left").attr("data-url", "#section-1");
+            $("#go-right").attr("data-url", "#section-2");
+
+            if(!$('body').hasClass('offWheel')) {
+
+                $('#main').css({'transition':'0.3s', 'background':'#3F0E63'});
+            }
 
         }
 
@@ -150,9 +134,13 @@ $(function() {
                 $('body').attr('id', '2'); 
             }
 
-             $("#go-left").attr("data-url", "#section-1");
-              $("#go-right").attr("data-url", "#section-3");
+            $("#go-left").attr("data-url", "#section-1");
+            $("#go-right").attr("data-url", "#section-3");
 
+            if(!$('body').hasClass('offWheel')) {
+
+               $('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
+            }
         }
 
         if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
@@ -188,8 +176,14 @@ $(function() {
                 $('body').attr('id', '3'); 
             }
 
-             $("#go-left").attr("data-url", "#section-2");
-              $("#go-right").attr("data-url", "#section-4");
+            $("#go-left").attr("data-url", "#section-2");
+            $("#go-right").attr("data-url", "#section-4");
+
+            if(!$('body').hasClass('offWheel')) {
+
+                $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
+
+            }
 
         }
 
@@ -223,9 +217,14 @@ $(function() {
                 $('body').attr('id', '4'); 
             }
 
-             $("#go-left").attr("data-url", "#section-3");
-              $("#go-right").attr("data-url", "#section-5");
+            $("#go-left").attr("data-url", "#section-3");
+            $("#go-right").attr("data-url", "#section-5");
 
+            if(!$('body').hasClass('offWheel')) {
+
+               $('#main').css({'transition':'0.3s', 'background':'#FADC6F'});
+
+            }
 
         }
 
@@ -246,7 +245,6 @@ $(function() {
 
             // button
 
-            // $('.allons-y-container').animate({'opacity':'0'}, 200);
             buble.buttonMedium();   
 
             // body id
@@ -264,6 +262,12 @@ $(function() {
             $("#go-right").attr("data-url", "#section-6");
 
             $('.container-avatar').css('margin-bottom', '20px');
+
+            if(!$('body').hasClass('offWheel')) {
+
+                $('#main').css({'transition':'0.3s', 'background':'#459CE7'});
+
+            }
 
     
         }
@@ -304,9 +308,32 @@ $(function() {
 
             $('.container-avatar').css('margin-bottom', '10px');
 
+            if(!$('body').hasClass('offWheel')) {
+
+                $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
+
+            }
+
 
         }
 
+    }
+    else {
+
+         (a > -1 && a <= .25 * s) && ((o = new t).bubleBig(), (o = new t("Bonjour !", "Je suis Stéphane")).textBig(), o.buttonBig(), $("#button-buble-1").show(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "1"), $("#go-left").attr("data-url", "#section-1"), $("#go-right").attr("data-url", "#section-2"));
+        a >= .25 * s && a <= 2 * s * 80 / 100 && ((o = new t).bubleSmall(), (o = new t("Vous voulez être présent sur le web ?", "Je gère votre :")).textSmall(), $("#bonjour").css({
+            "padding-bottom": "10px",
+            "padding-top": "0px"
+        }), $("#je-suis-stephane").hasClass("display") && $("#je-suis-stephane").removeClass("display"), $(".action").addClass("display"), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "2"), $("#go-left").attr("data-url", "#section-1"), $("#go-right").attr("data-url", "#section-3"));
+        a >= 2 * s * 80 / 100 && a <= 3 * s && ((o = new t).constraint1(), (o = new t("Mon travail se resume en 3 points :")).textSmall(), $("#bonjour").css({
+            "padding-bottom": "0px",
+            "padding-top": "0px"
+        }), $(".action").hasClass("display") || $("body").hasClass("offWheel") || $(".action").addClass("display"), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "3"), $("#go-left").attr("data-url", "#section-2"), $("#go-right").attr("data-url", "#section-4"));
+        a >= 3 * s * 85 / 100 && a <= 4 * s && ((o = new t).bubleBig(), (o = new t("Vous envisagez une collaboration ?", "Nous procédons en 5 étapes :")).textBig(), $("#je-suis-stephane").removeClass("display"), $("#createur-de-site-web").addClass("display"), o.buttonMedium(), $("#button-buble-1").hide(0), $("#button-buble-2").show(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "4"), $("#go-left").attr("data-url", "#section-3"), $("#go-right").attr("data-url", "#section-5"));
+        a >= 4 * s * 90 / 100 && a <= 5 * s && ((o = new t).constraint2(), (o = new t("Avant d'aller plus loin", "Voudriez-vous voir mon travail ?")).textBig(), $("#je-suis-stephane").removeClass("display"), $("#createur-de-site-web").addClass("display"), o.buttonMedium(), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").show(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "5"), $("#go-left").attr("data-url", "#section-4"), $("#go-right").attr("data-url", "#section-6"));
+        a >= 5 * s * 90 / 100 && a <= 6 * s && ((o = new t).bubleSmall(), $(".bulle-container").removeClass("buble-container-top"), (o = new t("Vous souhaitez qu'on travaille ensemble ?")).textSmall(), $("#bonjour").css({
+            "padding-bottom": "0px"
+        }), $("#je-suis-stephane").addClass("display"), o.buttonSmall(), $("#button-buble-1").hide(0), $("#button-buble-2").hide(0), $("#button-buble-3").hide(0), $("body").hasClass("resize") || $("body").hasClass("offWheel") || $("body").attr("id", "6"), $("#go-left").attr("data-url", "#section-5"), $("#go-right").attr("data-url", "#section-6"));
     }
 
     $(window).scroll(function(a) {
@@ -317,12 +344,6 @@ $(function() {
             // position scroll 
             var scrollLeft = $(this).scrollLeft();
 
-            /***** finish *****/
-
-            // width of main container 
-            // var body = $('#main').css('width'); 
-            // body = parseInt(body); 
-
             // width of one section 
             var width = $('.section').width();
             width = parseInt(width);
@@ -332,23 +353,6 @@ $(function() {
 
             var height = $('.section').height();
             height = parseInt(height);
-
-            // point where to hide scroll 
-            // var finish = body - (width + 4); 
-
-            // // make "scroll" container disapear at the end of the page
-            // if(scrollLeft >= finish) {
-
-            //  $('.scroll-flex').addClass('hide-scroll');
-
-            // }
-
-            // if(scrollLeft < finish) {
-
-            //  $('.scroll-flex').removeClass('hide-scroll');
-            // }
-
-            // border-bottom menu hide / show
 
             var n = $("#magic-line");
 
@@ -374,9 +378,263 @@ $(function() {
                 n.css({'opacity':'1', 'list-style-type':'none', 'transition':'0.1s ease-in-out'});
             }
 
-        if(windowWidth > 450) {
+        if(windowWidth <= 450) {
 
-            /***** animation *****/
+            if(scrollTop > -1 && scrollTop <= height * (70 / 100)) { 
+
+                //bulle
+
+                var buble = new t();
+                buble.bubleBig();
+
+                // text
+
+                var buble = new t('Bonjour !', 'Je suis Stéphane');
+                buble.textBig();
+                
+                // button
+
+                buble.buttonBig();
+
+                $('#button-buble-1').show(0);
+                $('#button-buble-2').hide(0);
+                $('#button-buble-3').hide(0);
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '1'); 
+                }
+
+              $("#go-left").attr("data-url", "#section-1");
+              $("#go-right").attr("data-url", "#section-2");
+
+              if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#3F0E63'});
+               }
+
+            }
+
+            if(scrollTop >= height * (70 / 100) && scrollTop <= (height * 2 * 80 / 100)) {
+
+                //bulle
+
+                var buble = new t();
+                buble.bubleSmall();
+                
+                // text
+
+                var buble = new t('Vous voulez être présent sur le web ?', 'Je gère votre :');
+                buble.textSmall();
+                $('#bonjour').css({'padding-bottom': '10px', 'padding-top':'0px'})
+
+                if($('#je-suis-stephane').hasClass('display')) {
+
+                    $('#je-suis-stephane').removeClass('display');
+                }
+
+                // button 
+
+                $('.action').addClass('display');
+
+                $('#button-buble-1').hide(0);
+                $('#button-buble-2').hide(0);
+                $('#button-buble-3').hide(0);
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '2'); 
+                }
+
+                $("#go-left").attr("data-url", "#section-1");
+                $("#go-right").attr("data-url", "#section-3");
+
+                if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
+                }
+   
+            }
+
+            if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
+
+                //bulle
+
+                var buble = new t();
+                buble.constraint1();
+
+                // text
+
+                var buble = new t('Mon travail se résume en 3 points :');
+                buble.textSmall();
+                $('#bonjour').css({'padding-bottom': '0px', 'padding-top':'0px'})
+
+                $('#bonjour').css({'padding-bottom':'0px'});
+
+                // button 
+
+                if(!$('.action').hasClass('display')) {
+
+                    $('.action').addClass('display');
+                }
+
+                $('#button-buble-1').hide(0);
+                $('#button-buble-2').hide(0);
+                $('#button-buble-3').hide(0);
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '3'); 
+                }
+
+                $("#go-left").attr("data-url", "#section-2");
+                $("#go-right").attr("data-url", "#section-4");
+
+                if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
+
+                }
+
+            }
+
+            if(scrollTop >= (height * 3 * 90 / 100) && scrollTop <= (height * 4)) {
+
+                //bulle
+
+                var buble = new t();
+                buble.bubleBig();
+                
+                // text
+
+                var buble = new t('Vous envisagez une collaboration ?', 'Nous procédons en 5 étapes :');
+                buble.textBig();
+
+                $('#je-suis-stephane').removeClass('display');
+                $('#createur-de-site-web').addClass('display');
+
+                // button 
+
+                buble.buttonMedium();
+
+                $('#button-buble-1').hide(0);
+                $('#button-buble-2').show(0);
+                $('#button-buble-3').hide(0);
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '4'); 
+                }
+
+                $("#go-left").attr("data-url", "#section-3");
+                $("#go-right").attr("data-url", "#section-5");
+
+                if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#FADC6F'});
+
+                }
+
+
+            }
+
+            if(scrollTop >= (height * 4 * 90 / 100) && scrollTop <= (height * 5)) {
+
+                //bulle
+
+                var buble= new t();
+                buble.constraint2();
+
+                // text
+
+                var buble = new t('Avant d\'aller plus loin', 'Voudriez-vous voir mon travail ?');
+                buble.textBig();
+
+                $('#je-suis-stephane').removeClass('display');
+                $('#createur-de-site-web').addClass('display');
+
+                // button
+
+                buble.buttonMedium();   
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '5'); 
+                }
+
+                $('#button-buble-1').hide(0);
+                $('#button-buble-2').hide(0);
+                $('#button-buble-3').show(0);
+
+                 $("#go-left").attr("data-url", "#section-4");
+                $("#go-right").attr("data-url", "#section-6");
+
+                $('.container-avatar').css('margin-bottom', '20px');
+
+                if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#459CE7'});
+                }
+        
+            }
+
+            if(scrollTop >= (height * 5 * 95 / 100) && scrollTop <= (height * 6)) {
+
+                //bulle
+
+                var buble = new t();
+                buble.bubleSmall();
+                
+                $('.bulle-container').removeClass('buble-container-top'); 
+
+                // text
+
+                var buble = new t('Vous souhaitez qu\'on travaille ensemble ?');
+                buble.textSmall();
+                $('#bonjour').css({'padding-bottom': '0px'});
+                $('#je-suis-stephane').addClass('display');
+
+                // button
+
+                buble.buttonSmall();
+
+                $('#button-buble-1').hide(0);
+                $('#button-buble-2').hide(0);
+                $('#button-buble-3').hide(0);
+
+                // body id
+
+                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
+
+                    $('body').attr('id', '6');
+                }
+
+                $('.container-avatar').css('margin-bottom', '10px');
+
+                $("#go-left").attr("data-url", "#section-5");
+                $("#go-right").attr("data-url", "#section-6");
+
+                if(!$('body').hasClass('offWheel')) {
+
+                    $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
+                }
+
+            }
+
+        }
+        else {
+
+             /***** animation *****/
 
             if(scrollLeft > -1 && scrollLeft <= width * (25 / 100)) {
 
@@ -412,7 +670,6 @@ $(function() {
                 $('#go-left').attr('data-url', '#section-1');
                 $('#go-right').attr('data-url', '#section-2');
 
-                // $('#main').css({'transition':'0.3s', 'background':'transparent'});
             }
 
             if(scrollLeft >= width * (25 / 100) && scrollLeft <= (width * 2 * 80 / 100)) {
@@ -454,8 +711,6 @@ $(function() {
 
                 $('#go-left').attr('data-url', '#section-1');
                 $('#go-right').attr('data-url', '#section-3');
-
-                // $('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
 
                 
             }
@@ -500,23 +755,7 @@ $(function() {
                 $('#go-left').attr('data-url', '#section-2');
                 $('#go-right').attr('data-url', '#section-4');
 
-                // $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
-
             }
-
-            // animation on smartphone 
-
-            // if(windoWidth > 400) {
-
-            //     value = width * 3 * 85 / 100;
-
-            // }
-
-            // if(windoWidth < 400) {
-
-            //     value = width * 3;
-            // }
-
 
             if(scrollLeft >= (width * 3 * 85 / 100) && scrollLeft <= (width * 4)) {
 
@@ -555,9 +794,6 @@ $(function() {
                 $('#go-left').attr('data-url', '#section-3');
                 $('#go-right').attr('data-url', '#section-5');
 
-                // $('#main').css({'transition':'0.3s', 'background':'#FADC6F'});
-
-
             }
 
             if(scrollLeft >= (width * 4 * 90 / 100) && scrollLeft <= (width * 5)) {
@@ -579,7 +815,6 @@ $(function() {
 
                 // button
 
-                // $('.allons-y-container').animate({'opacity':'0'}, 200);
                 buble.buttonMedium();   
 
                 // body id
@@ -597,8 +832,6 @@ $(function() {
 
                 $('#go-left').attr('data-url', '#section-4');
                 $('#go-right').attr('data-url', '#section-6');
-
-                // $('#main').css({'transition':'0.3s', 'background':'#459CE7'});
         
             }
 
@@ -638,231 +871,6 @@ $(function() {
                 // button slide mobile 
                 $('#go-left').attr('data-url', '#section-5');
                 $('#go-right').attr('data-url', '#section-6');
-
-                // $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
-
-            }
-
-        }
-        else {
-
-            if(scrollTop > -1 && scrollTop <= height * (70 / 100)) { 
-
-                //bulle
-
-                var buble = new t();
-                buble.bubleBig();
-
-                // text
-
-                var buble = new t('Bonjour !', 'Je suis Stéphane');
-                buble.textBig();
-                
-                // button
-
-                buble.buttonBig();
-
-                $('#button-buble-1').show(0);
-                $('#button-buble-2').hide(0);
-                $('#button-buble-3').hide(0);
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '1'); 
-                }
-
-              $("#go-left").attr("data-url", "#section-1");
-              $("#go-right").attr("data-url", "#section-2");
-
-            }
-
-            if(scrollTop >= height * (70 / 100) && scrollTop <= (height * 2 * 80 / 100)) {
-
-                //bulle
-
-                var buble = new t();
-                buble.bubleSmall();
-                
-                // text
-
-                var buble = new t('Vous voulez être présent sur le web ?', 'Je gère votre :');
-                buble.textSmall();
-                $('#bonjour').css({'padding-bottom': '10px', 'padding-top':'0px'})
-
-                if($('#je-suis-stephane').hasClass('display')) {
-
-                    $('#je-suis-stephane').removeClass('display');
-                }
-
-                // button 
-
-                $('.action').addClass('display');
-
-                $('#button-buble-1').hide(0);
-                $('#button-buble-2').hide(0);
-                $('#button-buble-3').hide(0);
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '2'); 
-                }
-
-                $("#go-left").attr("data-url", "#section-1");
-                $("#go-right").attr("data-url", "#section-3");
-   
-            }
-
-            if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
-
-                //bulle
-
-                var buble = new t();
-                buble.constraint1();
-
-                // text
-
-                var buble = new t('Mon travail se résume en 3 points :');
-                buble.textSmall();
-                $('#bonjour').css({'padding-bottom': '0px', 'padding-top':'0px'})
-
-                $('#bonjour').css({'padding-bottom':'0px'});
-
-                // button 
-
-                if(!$('.action').hasClass('display')) {
-
-                    $('.action').addClass('display');
-                }
-
-                $('#button-buble-1').hide(0);
-                $('#button-buble-2').hide(0);
-                $('#button-buble-3').hide(0);
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '3'); 
-                }
-
-                $("#go-left").attr("data-url", "#section-2");
-                $("#go-right").attr("data-url", "#section-4");
-
-            }
-
-            if(scrollTop >= (height * 3 * 90 / 100) && scrollTop <= (height * 4)) {
-
-                //bulle
-
-                var buble = new t();
-                buble.bubleBig();
-                
-                // text
-
-                var buble = new t('Vous envisagez une collaboration ?', 'Nous procédons en 5 étapes :');
-                buble.textBig();
-
-                $('#je-suis-stephane').removeClass('display');
-                $('#createur-de-site-web').addClass('display');
-
-                // button 
-
-                buble.buttonMedium();
-
-                $('#button-buble-1').hide(0);
-                $('#button-buble-2').show(0);
-                $('#button-buble-3').hide(0);
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '4'); 
-                }
-
-                $("#go-left").attr("data-url", "#section-3");
-                $("#go-right").attr("data-url", "#section-5");
-
-
-            }
-
-            if(scrollTop >= (height * 4 * 90 / 100) && scrollTop <= (height * 5)) {
-
-                //bulle
-
-                var buble= new t();
-                buble.constraint2();
-
-                // text
-
-                var buble = new t('Avant d\'aller plus loin', 'Voudriez-vous voir mon travail ?');
-                buble.textBig();
-
-                $('#je-suis-stephane').removeClass('display');
-                $('#createur-de-site-web').addClass('display');
-
-                // button
-
-                // $('.allons-y-container').animate({'opacity':'0'}, 200);
-                buble.buttonMedium();   
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '5'); 
-                }
-
-                $('#button-buble-1').hide(0);
-                $('#button-buble-2').hide(0);
-                $('#button-buble-3').show(0);
-
-                 $("#go-left").attr("data-url", "#section-4");
-                $("#go-right").attr("data-url", "#section-6");
-
-                $('.container-avatar').css('margin-bottom', '20px');
-        
-            }
-
-            if(scrollTop >= (height * 5 * 95 / 100) && scrollTop <= (height * 6)) {
-
-                //bulle
-
-                var buble = new t();
-                buble.bubleSmall();
-                
-                $('.bulle-container').removeClass('buble-container-top'); 
-
-                // text
-
-                var buble = new t('Vous souhaitez qu\'on travaille ensemble ?');
-                buble.textSmall();
-                $('#bonjour').css({'padding-bottom': '0px'});
-                $('#je-suis-stephane').addClass('display');
-
-                // button
-
-                buble.buttonSmall();
-
-                $('#button-buble-1').hide(0);
-                $('#button-buble-2').hide(0);
-                $('#button-buble-3').hide(0);
-
-                // body id
-
-                if(!$('body').hasClass('resize') && !$('body').hasClass('offWheel')) {
-
-                    $('body').attr('id', '6');
-                }
-
-                $('.container-avatar').css('margin-bottom', '10px');
-
-                $("#go-left").attr("data-url", "#section-5");
-                $("#go-right").attr("data-url", "#section-6");
 
             }
 
