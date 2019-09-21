@@ -30,9 +30,6 @@ $(window).bind("load", function() {
         var left = x.left;
         var top = x.top;
 
-        console.log('left : ' + x.left);
-        console.log('top : ' + x.top);
-
         $('html, body').animate({ 
             scrollLeft: left + "px",
             scrollTop:top + "px"
