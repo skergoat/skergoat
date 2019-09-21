@@ -32,11 +32,6 @@ img {
     cursor: pointer
 }
 
-#tidio-chat-iframe {
-
-    margin-bottom:20px;
-}
-
 .slide-mobile {
     display: block;
     position: fixed;
@@ -1673,6 +1668,19 @@ div.wpcf7-validation-errors {
         background: #2a1047;
         transition: .2s ease-in-out
     }
+
+    .hover_mauve:hover,
+    .hover_rouge:hover,
+    .hover_vert:hover,
+    .hover_jaune:hover,
+    .hover_bleu:hover {
+
+        transition: .2s ease-in-out;
+        background: #2a1047;
+    }
+
+    
+
     .small-action {
         width: 100px
     }

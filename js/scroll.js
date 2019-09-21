@@ -99,6 +99,15 @@ $(function() {
                 $('#main').css({'transition':'0.3s', 'background':'#3F0E63'});
             }
 
+            /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#7025C1'});
+                $('#menu-mobile').css('background', '#1f0731');
+                $('#menu-mobile li').css('border-top', '1px solid #7025c1');
+                $('#menu-mobile li').removeClass('hover_rouge').addClass('hover_mauve');
+                $('#menu-mobile li a').css('color', 'white');
+
+
         }
 
         if(scrollTop >= height * (70 / 100) && scrollTop <= (height * 2 * 80 / 100)) {
@@ -141,6 +150,18 @@ $(function() {
 
                $('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
             }
+
+
+              /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#EE7789'});
+                $('#menu-mobile').css('background', '#5C1922');
+                $('#menu-mobile li').css('border-top', '1px solid #CB5262');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_mauve').addClass('hover_rouge');
+                $('#menu-mobile li a').css('color', 'white');
+
+
+           
         }
 
         if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
@@ -185,6 +206,15 @@ $(function() {
 
             }
 
+             /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5AD8C5'});
+                $('#menu-mobile').css('background', '#17403A');
+                $('#menu-mobile li').css('border-top', '1px solid #4DD5C0');
+                $('#menu-mobile li').removeClass('hover_jaune').removeClass('hover_rouge').addClass('hover_vert');
+                $('#menu-mobile li a').css('color', 'white');
+            
+
         }
 
         if(scrollTop >= (height * 3 * 90 / 100) && scrollTop <= (height * 4)) {
@@ -226,6 +256,14 @@ $(function() {
 
             }
 
+                /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#FAE07F'});
+                $('#menu-mobile').css('background', '#433B1E');
+                $('#menu-mobile li').css('border-top', '1px solid #F9D75D');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_bleu').addClass('hover_jaune');
+                $('#menu-mobile li a').css('color', 'white');
+
         }
 
         if(scrollTop >= (height * 4 * 90 / 100) && scrollTop <= (height * 5)) {
@@ -266,10 +304,16 @@ $(function() {
             if(!$('body').hasClass('offWheel')) {
 
                 $('#main').css({'transition':'0.3s', 'background':'#459CE7'});
-
             }
 
-    
+                  /***/
+                
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5DA8EA'});
+                $('#menu-mobile').css('background', '#112436');
+                $('#menu-mobile li').css('border-top', '1px solid #459CE7');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_jaune').addClass('hover_bleu');
+                $('#menu-mobile li a').css('color', 'white');
+
         }
 
         if(scrollTop >= (height * 5 * 95 / 100) && scrollTop <= (height * 6)) {
@@ -313,6 +357,14 @@ $(function() {
                 $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
 
             }
+
+                 /***/
+                
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5AD8C5'});
+                $('#menu-mobile').css('background', '#17403A');
+                $('#menu-mobile li').css('border-top', '1px solid #4DD5C0');
+                $('#menu-mobile li').removeClass('hover_bleu').addClass('hover_vert');
+                $('#menu-mobile li a').css('color', 'white');
 
 
         }
@@ -415,6 +467,14 @@ $(function() {
                     $('#main').css({'transition':'0.3s', 'background':'#3F0E63'});
                }
 
+               /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#7025C1'});
+                $('#menu-mobile').css('background', '#1f0731');
+                $('#menu-mobile li').css('border-top', '1px solid #7025c1');
+                $('#menu-mobile li').removeClass('hover_rouge').addClass('hover_mauve');
+                $('#menu-mobile li a').css('color', 'white');
+
             }
 
             if(scrollTop >= height * (70 / 100) && scrollTop <= (height * 2 * 80 / 100)) {
@@ -457,7 +517,16 @@ $(function() {
 
                     $('#main').css({'transition':'0.3s', 'background':'#EB5F74'});
                 }
-   
+
+                /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#EE7789'});
+                $('#menu-mobile').css('background', '#5C1922');
+                $('#menu-mobile li').css('border-top', '1px solid #CB5262');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_mauve').addClass('hover_rouge');
+                $('#menu-mobile li a').css('color', 'white');
+
+
             }
 
             if(scrollTop >= (height * 2 * 80 / 100) && scrollTop <= (height * 3  * 90 / 100)) {
@@ -499,8 +568,17 @@ $(function() {
                 if(!$('body').hasClass('offWheel')) {
 
                     $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
-
                 }
+
+                 /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5AD8C5'});
+                $('#menu-mobile').css('background', '#17403A');
+                $('#menu-mobile li').css('border-top', '1px solid #4DD5C0');
+                $('#menu-mobile li').removeClass('hover_jaune').removeClass('hover_rouge').addClass('hover_vert');
+                $('#menu-mobile li a').css('color', 'white');
+
+                
 
             }
 
@@ -540,8 +618,15 @@ $(function() {
                 if(!$('body').hasClass('offWheel')) {
 
                     $('#main').css({'transition':'0.3s', 'background':'#FADC6F'});
-
                 }
+                      /***/
+
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#FAE07F'});
+                $('#menu-mobile').css('background', '#433B1E');
+                $('#menu-mobile li').css('border-top', '1px solid #F9D75D');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_bleu').addClass('hover_jaune');
+                $('#menu-mobile li a').css('color', 'white');
+
 
 
             }
@@ -585,6 +670,14 @@ $(function() {
 
                     $('#main').css({'transition':'0.3s', 'background':'#459CE7'});
                 }
+
+                       /***/
+                
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5DA8EA'});
+                $('#menu-mobile').css('background', '#112436');
+                $('#menu-mobile li').css('border-top', '1px solid #459CE7');
+                $('#menu-mobile li').removeClass('hover_vert').removeClass('hover_jaune').addClass('hover_bleu');
+                $('#menu-mobile li a').css('color', 'white');
         
             }
 
@@ -628,6 +721,15 @@ $(function() {
 
                     $('#main').css({'transition':'0.3s', 'background':'#4DD5C0'});
                 }
+
+
+                       /***/
+                
+                $('.hamburger span').css({'transition':'0.3s', 'background':'#5AD8C5'});
+                $('#menu-mobile').css('background', '#17403A');
+                $('#menu-mobile li').css('border-top', '1px solid #4DD5C0');
+                $('#menu-mobile li').removeClass('hover_bleu').addClass('hover_vert');
+                $('#menu-mobile li a').css('color', 'white');
 
             }
 

@@ -1,25 +1,3 @@
-// $(function() {
-//     $(".hamburger").click(function(s) {
-//         s.preventDefault(), $(this).hasClass("responsive") ? ($("nav").animate({
-//             height: "55px"
-//         }, 300), $(".hamburger").css("transition", "0.2s ease-in-out").css("margin-top", "-=10px"), $("#slice-1").css("transition", "0.2s ease-in-out").css("transform", "rotate(0deg) translateY(0px)"), $("#slice-2").css("transition", "0.2s ease-in-out").css("transform", "translateX(0px)").fadeIn(50), $("#slice-3").css("transition", "0.2s ease-in-out").css("transform", "rotate(0deg) translateY(0px)"), -100 == $("#go-left").position().left && "1" != $("body").attr("id") && ($("#go-left").css({
-//             transition: "0.2s",
-//             left: "0px"
-//         }), $("#go-right").css({
-//             transition: "0.2s",
-//             right: "0px"
-//         }))) : ($(".hamburger").css("transition", "0.2s ease-in-out").css("margin-top", "+=10px"), $("#slice-1").css("transition", "0.2s ease-in-out").css("transform", "rotate(43deg) translateY(6px)"), $("#slice-2").css("transition", "0.2s ease-in-out").css("transform", "translateX(100px)").fadeOut(50), $("#slice-3").css("transition", "0.2s ease-in-out").css("transform", "rotate(-43deg) translateY(-6px)"), $("nav").animate({
-//             height: "345px"
-//         }, 300), 0 == $("#go-left").position().left && ($("#go-left").css({
-//             transition: "0.2s",
-//             left: "-100px"
-//         }), $("#go-right").css({
-//             transition: "0.2s",
-//             right: "-100px"
-//         }))), $(this).toggleClass("responsive")
-//     })
-// });
-
 $(function() {
 
     // open / close 
@@ -42,21 +20,25 @@ $(function() {
             $('#slice-3').css('transition', '0.2s ease-in-out').css('transform', 'rotate(0deg) translateY(0px)');
 
             // slide buttons
-            // if($('#go-right').position().right == -100 && $('body').attr('id') != '1') {
+        
+            if(width > 450) {
 
-                if(width > 450) {
+                $('#go-left').css({'transition':'0.2s', 'left':'0px', 'right': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'0px'});
 
-                    $('#go-left').css({'transition':'0.2s', 'left':'0px'});
-                    $('#go-right').css({'transition':'0.2s', 'right':'0px'});
+            }
+            else { 
 
-                }
-                else { 
+                $('#go-left').css({'transition':'0.2s', 'right':'5px', 'left': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'5px'});
 
-                    $('#go-left').css({'transition':'0.2s', 'right':'5px'});
-                    $('#go-right').css({'transition':'0.2s', 'right':'5px'});
+                setTimeout(function() {
 
-                }
-            // }
+                     $('nav').css('box-shadow', 'none');
+
+                }, 200);
+                
+            }
 
         }
         else {
@@ -72,23 +54,20 @@ $(function() {
 
             // slide buttons
 
-            // if($('#go-right').position().right == 5) {
+            if(width > 450) {
 
-            //     alert('hello');
+                $('#go-left').css({'transition':'0.2s', 'left':'-100px', 'right': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
 
-                if(width > 450) {
+            }
+            else { 
 
-                    $('#go-left').css({'transition':'0.2s', 'left':'-100px'});
-                    $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
+                $('#go-left').css({'transition':'0.2s', 'right':'-100px', 'left': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
 
-                }
-                else { 
+                $('nav').css('box-shadow', '0 3px 6px rgba(0, 0, 0, .5)');
 
-                    $('#go-left').css({'transition':'0.2s', 'right':'-100px'});
-                    $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
-
-                }
-            // }
+            }
 
         }
 

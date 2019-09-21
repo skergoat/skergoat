@@ -144,27 +144,23 @@
 
     .hamburger span {
 
-        background:white;
+        /*background:white;*/
+        background:transparent;
     }
 
     #menu-mobile {
 
-        background:rgba(0, 0, 0, 0.6);
+        background:white;
     }
 
     #menu-mobile li {
 
-        border-top:1px solid white;
+        border-top:1px solid black;
     }
 
     #menu-mobile li a {
 
-        color:white;
-    }
-
-    #menu-mobile li a:hover {
-        background: rgba(255, 255, 255, 0.5);
-        transition: .2s ease-in-out
+        color:black;
     }
 
     .allons-y {
@@ -174,6 +170,47 @@
         color:white;
     }
 
+    /** toggle hover **/
+
+    #menu-mobile li a:hover {
+
+        background:none !important;
+    }
+
+    .hover_mauve:hover,
+    .hover_rouge:hover,
+    .hover_vert:hover,
+    .hover_jaune:hover,
+    .hover_bleu:hover {
+
+         transition: .2s ease-in-out;
+    }
+
+    .hover_mauve:hover {
+
+        background:#2a1047;
+        
+    }
+
+    .hover_rouge:hover {
+
+        background:#6C1E28;   
+    }
+
+    .hover_vert:hover {
+
+        background:#205A51;   
+    }
+
+    .hover_jaune:hover {
+
+        background:#554A25;   
+    }
+
+    .hover_bleu:hover {
+
+        background:#19344D;   
+    }
 
     /**/
 

@@ -80,11 +80,6 @@ $(window).bind("load", function() {
             // disable scroll to keep the same 'body' id and stay at current section 
             $('body').addClass('resize');
 
-            // $('body').css('overflow', 'hidden');
-
-            var x = $('#section-' + body_id).position();
-            scrollLeftTop(x);
-
             if($(this).width() > 450) {
 
                 $('#main').css('display', 'flex');
@@ -95,6 +90,9 @@ $(window).bind("load", function() {
                 $('#main').css('display', 'block');
             }
 
+            var x = $('#section-' + body_id).position();
+            scrollLeftTop(x);
+
             rtime = new Date();
             if (timeout === false) {
                 timeout = true;
@@ -103,51 +101,82 @@ $(window).bind("load", function() {
 
         }
 
-        // resize menu 
-
-        var width = $(window).width();
+        // menu and boutons position
 
         if($('.hamburger').hasClass('responsive')) {
 
-            if(width > 780) {
+            if($(this).width() > 780) {
 
                 $('nav').animate({'height':'90px'}, 0);
 
+                $('#go-right').css('right', '0px');
+                $('#go-left').css({'left' : '0px', 'right':'auto'});
+
             }
-            if(width < 780) {
+            if($(this).width() < 780) {
 
                 $('nav').animate({'height':'345px'}, 0);
+
+                if($(this).width() < 780 && $(this).width() >= 450) {
+
+                    $('#go-right').css('right', '-100px');
+                    $('#go-left').css({'left' : '-100px', 'right':'auto'});
+                }
+                
+                if($(this).width() <= 450) {
+
+                    $('#go-right').css('right', '-100px');
+                    $('#go-left').css({'left':'auto', 'right':'-100px'});
+                }
     
             }
-
+            
         }
         else {
 
-            if(width > 780) {
+            if($(this).width() > 780) {
 
                 $('nav').animate({'height':'90px'}, 0);
 
             }
-            if(width <= 780) {
+            if($(this).width() <= 780) {
 
                 $('nav').animate({'height':'55px'}, 0);
+
+                if($(this).width() < 780 && $(this).width() >= 450) {
+
+                    $('#go-right').css('right', '0px');
+                    $('#go-left').css({'left' : '0px', 'right':'auto'});
+                }
+                
+                if($(this).width() <= 450) {
+
+                    $('#go-right').css('right', '5px');
+                    $('#go-left').css({'left':'auto', 'right':'5px'});
+                }
     
             }
 
         }
-
+      
         if($(this).width() > 450) {
 
-            $('#go-right').css('right', '0px');
-            $('#go-left').css('left', '0px');
+            // menu color 
+
+            $('.hamburger span').css({'transition':'0.3s', 'background':'#7025c1'});
+            $('#menu-mobile').css('background', '#1f0731');
+            $('#menu-mobile li').css('border-top', '1px solid  #7025c1');
+            $('#menu-mobile li a').css('color', 'white');
+
+            // background color on desktop 
+
             $('#main').css('transition', '0s').css('background', 'transparent');
             $("#background-0").css("top", "0px");
+
         } 
         else if($(this).width() <= 450) {
 
-            $('#go-right').css({'right':'5px'});
-            $('#go-left').css({'left':'auto', 'right':'5px'});
-            $('#main').css('transition', '0.3s ease-in-out');
+            // background color on mobile 
 
             var scrollTop = $(this).scrollTop();
 

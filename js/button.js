@@ -67,7 +67,7 @@ $(window).bind("load", function() {
             }
             else {
 
-            speed = 0;
+                speed = 0;
 
             }
 
@@ -112,8 +112,6 @@ $(window).bind("load", function() {
         $('#main-2').css('display', 'flex');
 
         // show #sub-1 up button 
-
-        // $('.QuiSuisJe').hide(0);
         var body_id = $('body').attr('id');
 
         $('.QuiSuisJe').not('#sublink_' + body_id).hide(0);
@@ -180,12 +178,12 @@ $(window).bind("load", function() {
 
         if(width > 450) {
 
-            $('#go-left').animate({'left':'-100px'}, 200);
+            $('#go-left').animate({'left':'-100px', 'right':'auto'}, 200);
             $('#go-right').animate({'right':'-100px'}, 200);
         }
         else {
 
-            $('#go-left').css({'transition':'0.2s', 'right':'-100px'});
+            $('#go-left').css({'transition':'0.2s', 'right':'-100px', 'left':'auto'});
             $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
         }
 
@@ -368,7 +366,7 @@ $(window).bind("load", function() {
 
             display = 'flex';
 
-            $('#go-left').css({'display': 'block', 'left':'0px'});
+            $('#go-left').css({'display': 'block', 'left':'0px', 'right':'auto'});
             $('#go-right').css({'display':'block', 'right':'0px'});
 
             // if($('body').hasClass('ofWheel')) {
@@ -380,7 +378,7 @@ $(window).bind("load", function() {
 
             display = 'block';
 
-            $('#go-left').css({'display': 'block', 'right':'5px'});
+            $('#go-left').css({'display': 'block', 'right':'5px', 'left':'auto'});
             $('#go-right').css({'display':'block', 'right':'5px'});
 
         }
