@@ -19,7 +19,7 @@
 
 	$template_directory_uri = get_template_directory_uri();
 ?>
-	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://kit.fontawesome.com/1596c4b58a.sjs" crossorigin="anonymous"></script> -->
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
@@ -34,6 +34,13 @@
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="https://www.skergoat.com/wp-content/themes/Divi-child/mobile.css"/>
+
+	<style>
+	#tidio-chat iframe { bottom: 3.5em !important; }
+	@media only screen and (max-width: 980px) {
+	    #tidio-chat iframe { bottom: 3.5em !important; }
+	}
+	</style>
 
 </head>
 <body <?php body_class(); ?>>

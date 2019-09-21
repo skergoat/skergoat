@@ -32,6 +32,11 @@ img {
     cursor: pointer
 }
 
+#tidio-chat-iframe {
+
+    margin-bottom:20px;
+}
+
 .slide-mobile {
     display: block;
     position: fixed;
