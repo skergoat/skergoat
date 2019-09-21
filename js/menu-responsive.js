@@ -27,7 +27,7 @@ $(function() {
                 $('#go-right').css({'transition':'0.2s', 'right':'0px'});
 
             }
-            else { 
+            else if(width <= 450) { 
 
                 $('#go-left').css({'transition':'0.2s', 'right':'5px', 'left': 'auto'});
                 $('#go-right').css({'transition':'0.2s', 'right':'5px'});
@@ -60,7 +60,7 @@ $(function() {
                 $('#go-right').css({'transition':'0.2s', 'right':'-100px'});
 
             }
-            else { 
+            if(width <= 450) { 
 
                 $('#go-left').css({'transition':'0.2s', 'right':'-100px', 'left': 'auto'});
                 $('#go-right').css({'transition':'0.2s', 'right':'-100px'});

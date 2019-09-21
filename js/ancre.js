@@ -3,47 +3,56 @@ $(function() {
 
     	var t = $(this).attr("href");
 
-    	$('.hamburger').removeClass('responsive');
+        if($(window).width() <= 780) {
 
-    	$('nav').animate({'height':'55px'}, 300);
+        	$('.hamburger').removeClass('responsive');
 
-        // toggle button
+        	$('nav').animate({'height':'55px'}, 300);
 
-        $('.hamburger').css('transition', '0.2s ease-in-out').css('margin-top', '-=10px');
-        $('#slice-1').css('transition', '0.2s ease-in-out').css('transform', 'rotate(0deg) translateY(0px)');
-        $('#slice-2').css('transition', '0.2s ease-in-out').css('transform', 'translateX(0px)').fadeIn(50);
-        $('#slice-3').css('transition', '0.2s ease-in-out').css('transform', 'rotate(0deg) translateY(0px)');
+            // toggle button
 
-        // slide buttons
+            $('.hamburger').css('transition', '0.2s ease-in-out').css('margin-top', '-=10px');
+            $('#slice-1').css('transition', '0.2s ease-in-out').css('transform', 'rotate(0deg) translateY(0px)');
+            $('#slice-2').css('transition', '0.2s ease-in-out').css('transform', 'translateX(0px)').fadeIn(50);
+            $('#slice-3').css('transition', '0.2s ease-in-out').css('transform', 'rotate(0deg) translateY(0px)');
 
-        var width = $(window).width();
-    
-        if(width > 450) {
+            // slide buttons
 
-            $('#go-left').css({'transition':'0.2s', 'left':'0px', 'right': 'auto'});
-            $('#go-right').css({'transition':'0.2s', 'right':'0px'});
+            var width = $(window).width();
+        
+            if(width > 450) {
 
-        }
-        else { 
+                $('#go-left').css({'transition':'0.2s', 'left':'0px', 'right': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'0px'});
 
-            $('#go-left').css({'transition':'0.2s', 'right':'5px', 'left': 'auto'});
-            $('#go-right').css({'transition':'0.2s', 'right':'5px'});
+            }
+            else if(width <= 450) { 
+
+                $('#go-left').css({'transition':'0.2s', 'right':'5px', 'left': 'auto'});
+                $('#go-right').css({'transition':'0.2s', 'right':'5px'});
+
+                setTimeout(function() {
+
+                     $('nav').css('box-shadow', 'none');
+
+                }, 200);
+                
+            }
 
             setTimeout(function() {
 
-                 $('nav').css('box-shadow', 'none');
+                if ("#" !== t) return $("html, body").animate({
+                    scrollLeft: $(t).position().left
+                }, 300), !1
 
-            }, 200);
-            
+            }, 300);
         }
+        else {
 
-        setTimeout(function() {
-
-	        if ("#" !== t) return $("html, body").animate({
-	            scrollLeft: $(t).position().left
-	        }, 300), !1
-
-        }, 300);
+            if ("#" !== t) return $("html, body").animate({
+                scrollLeft: $(t).position().left
+            }, 300), !1
+        }
 
     });
 
